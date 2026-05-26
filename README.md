@@ -130,7 +130,6 @@ where:
 
 In practice, the repository uses finite gamma sets:
 
-```python
 G = [
     14.134725141,
     21.022039639,
