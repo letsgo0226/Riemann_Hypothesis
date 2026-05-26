@@ -1,119 +1,146 @@
 # Riemann_Hypothesis
 
-Experimental computational systems inspired by the Riemann Hypothesis, spectral dynamics, and prime-distribution structures.
+An Experimental Computational Framework for Spectral Encoding, Recursive Gödel–SHA Systems, and Analytic-Number-Theoretic State Representations
 
 ---
 
-## Overview
+# Abstract
 
-This repository contains exploratory mathematical and computational prototypes related to:
+This repository presents an exploratory computational framework inspired by:
 
-- Riemann zeta function dynamics
-- Nontrivial zero approximations
-- Explicit-formula-inspired prime field simulations
-- Möbius / sieve-based generators
-- Hilbert–Pólya style spectral intuition
-- Complex attractor systems
-- Terminal-based quantum / phase-space visualizations
+- the Riemann zeta function,
+- explicit formulas in analytic number theory,
+- Hilbert–Pólya spectral intuition,
+- recursive self-referential symbolic systems,
+- and finite computational analogues of Gödel encoding using SHA-256.
 
-The project is intended as an experimental research sandbox for studying relationships between:
+The project combines:
 
-- prime distributions,
-- oscillatory spectral systems,
-- complex dynamics,
-- and computational representations of analytic number theory.
+- numerical experimentation,
+- symbolic recursion,
+- spectral state representations,
+- recursive deterministic encoding,
+- image/function/code embeddings,
+- and conditional information-theoretic formulations.
 
----
+The repository is intentionally interdisciplinary and exploratory.  
+It does **not** claim:
 
-## Important Note
+- a proof of the Riemann Hypothesis,
+- a verified Hilbert–Pólya operator,
+- an exact prime oracle,
+- or a universal decision procedure.
 
-This repository **does NOT claim a proof of the Riemann Hypothesis**.
+Instead, the repository should be interpreted as a computational research sandbox for studying relationships among:
 
-The code here should be understood as:
-
-- numerical experiments,
-- visual simulations,
-- heuristic models,
-- symbolic attractor systems,
-- and computational metaphors inspired by analytic number theory.
-
-Many systems intentionally blend:
-
-- mathematics,
-- visualization,
-- dynamical systems,
-- signal-processing intuition,
-- and speculative computational structures.
-
-They are exploratory rather than formally rigorous proofs.
+- spectral systems,
+- recursive encoding structures,
+- symbolic state evolution,
+- analytic-number-theoretic dynamics,
+- and deterministic computational representations.
 
 ---
 
-# Topics
+# 1. Introduction
 
-## 1. Riemann Zeta Inspired Dynamics
+The Riemann Hypothesis (RH) is one of the central open problems in mathematics.
 
-Several prototypes evolve complex states of the form:
+It asserts that every nontrivial zero of the Riemann zeta function satisfies:
 
 \[
-s = \sigma + it
+\rho
+=
+\frac12+i\gamma
 \]
 
-often near the critical line:
+where:
 
 \[
-\sigma = \frac{1}{2}
+\gamma \in \mathbb R
 \]
 
-using oscillatory or recursive update systems.
+The distribution of these zeros is deeply connected to:
+
+- prime-number fluctuations,
+- explicit formulas,
+- spectral phenomena,
+- random matrix analogies,
+- and analytic structures in number theory.
+
+This repository explores computational systems motivated by finite approximations to such structures.
 
 ---
 
-## 2. Explicit Formula Inspired Systems
+# 2. The Riemann Zeta Function
 
-Some experiments approximate structures related to:
+For:
+
+\[
+\Re(s)>1
+\]
+
+the zeta function is defined by:
+
+\[
+\zeta(s)
+=
+\sum_{n=1}^{\infty}
+\frac1{n^s}
+\]
+
+and extends analytically to:
+
+\[
+\mathbb C\setminus\{1\}
+\]
+
+through analytic continuation.
+
+The nontrivial zeros are conjectured to lie on the critical line:
+
+\[
+\Re(s)=\frac12
+\]
+
+which is the statement of RH.
+
+---
+
+# 3. Explicit-Formula-Inspired Systems
+
+Several prototypes are motivated by finite approximations to explicit formulas such as:
 
 \[
 \psi(x)
 =
 x
 -
-\sum_\rho \frac{x^\rho}{\rho}
+\sum_{\rho}
+\frac{x^\rho}{\rho}
+-
+\log(2\pi)
+-
+\frac12\log(1-x^{-2})
 \]
 
-using finite collections of nontrivial zeros.
+where:
 
-These systems attempt to study:
+- \(\psi(x)\) denotes Chebyshev’s second function,
+- \(\rho\) ranges over nontrivial zeros of \(\zeta(s)\).
 
-- oscillatory corrections,
-- prime-density fluctuations,
-- and emergent spectral behavior.
+In practice, the repository uses finite gamma sets:
 
----
-
-## 3. Möbius / Prime Sieve Experiments
-
-Certain generators implement heuristic filters inspired by:
-
-- Möbius inversion,
-- coprimality structures,
-- divisor fields,
-- and recursive prime-state evolution.
-
----
-
-## 4. Spectral / Hilbert–Pólya Inspired Models
-
-Some simulations explore the idea that zeta zeros may behave analogously to:
-
-- eigenvalues,
-- resonance spectra,
-- quantum-like attractors,
-- or dynamical phase systems.
-
-These are conceptual explorations only.
-
----
+```python
+G = [
+    14.134725141,
+    21.022039639,
+    25.010857580,
+    30.424876126,
+    32.935061588,
+    37.586178159,
+    40.918719012,
+    43.327073281,
+]
 
 ## Example
 
