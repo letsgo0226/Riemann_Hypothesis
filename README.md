@@ -169,13 +169,6 @@ outputs/
 
 ---
 
-## Example
-
-```bash
-python3 -c 'import hashlib,json;print(hashlib.sha256(json.dumps({"state":"recursive"}).encode()).hexdigest())'
-
----
-
 ## Conceptual Themes
 
 This repository explores interactions between:
