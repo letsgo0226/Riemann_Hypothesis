@@ -171,6 +171,7 @@ outputs/
 
 ## Example
 
+```bash
 python3 -c 'import hashlib,json;print(hashlib.sha256(json.dumps({"state":"recursive"}).encode()).hexdigest())'
 
 ---
